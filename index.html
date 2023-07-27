@@ -25,37 +25,39 @@
     <header class="container mx-auto">
         <!-- navbar starts -->
         <nav class="">
-            <div class="navbar bg-base-100 lg:bg-[#F85559] my-10 rounded-full px-11 py-7 lg:text-[white] text-[black] flex flex-row-reverse lg:flex-row">
-                          <!-- needed part starts -->
-            <div class="flex-start">
-                <!-- regular menu bar -->
-                <div class="flex-1 hidden lg:block">
-                    <ul class="flex justify-center items-center gap-7 fonts-lato text-lg">
-                        <li> <a href="">Home</a></li>
-                        <li> <a href="">About Us</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">All Fruits</a></li>
-                    </ul>
+            <div
+                class="navbar bg-base-100 lg:bg-[#F85559] my-10 rounded-full px-11 py-7 lg:text-[white] text-[black] flex flex-row-reverse lg:flex-row">
+                <!-- needed part starts -->
+                <div class="flex-start">
+                    <!-- regular menu bar -->
+                    <div class="flex-1 hidden lg:block">
+                        <ul class="flex justify-center items-center gap-7 fonts-lato text-lg">
+                            <li> <a href="">Home</a></li>
+                            <li> <a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <!-- button -->
+                    <div class="dropdown  block lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost btn-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <!-- customized width -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-10 lg:w-52">
+                            <li> <a href="">Home</a></li>
+                            <li> <a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- button -->
-                <div class="dropdown  block lg:hidden">
-                    <label tabindex="0" class="btn btn-ghost btn-circle ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
-                    </label>
-                    <!-- customized width -->
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-10 lg:w-52">
-                        <li> <a href="">Home</a></li>
-                        <li> <a href="">About Us</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">All Fruits</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- needed part ends -->
+                <!-- needed part ends -->
                 <div class="flex-1 lg:pl-52 ">
                     <img src="./images/logo.png" alt="">
                     <a class="btn btn-ghost normal-case text-4xl fonts-lato">Fruit Burst</a>
@@ -63,7 +65,8 @@
                 <!-- search bar -->
                 <div class="flex-none gap-2 hidden lg:block">
                     <div class="form-control w-96">
-                        <input type="text" placeholder="Search" class="input input-bordered w-96 md:w-auto text-base " />
+                        <input type="text" placeholder="Search"
+                            class="input input-bordered w-96 md:w-auto text-base " />
                     </div>
 
                 </div>
@@ -74,78 +77,113 @@
     <main class="container mx-auto ">
         <!-- Banner section starts -->
         <section>
-            <!-- adding carocel -->
-            <div class="carousel w-full">
-                <!-- working on the 1st page -->
-                <div id="slide1" class="carousel-item relative w-full justify-center items-center  ">
-                    <!-- adding background -->
 
-                  <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6" style=" background-image: url('./images/banner1.png');">
-                    <!-- text part -->
-                    <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
-                    <p class="text-xl">We supply highly quality organic products</p>
-                    <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
+            <div class="relative ">
+                <!-- carousel section -->
+                <div class="carousel w-full  ">
+                    <!--working on the 1st page -->
+                    <div id="slide1" class="carousel-item relative w-full justify-center items-center  ">
+                        <!-- adding background -->
 
-                  </div>
-                  <!-- swap button function  starts-->
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                  <!-- swap button ends -->
-                </div> 
-                <!-- slide 2 -->
-                <div id="slide2" class="carousel-item relative w-full justify-center items-center  ">
-                    <!-- adding background -->
+                        <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6"
+                            style=" background-image: url('./images/banner1.png');">
+                            <!-- text part -->
+                            <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
+                            <p class="text-xl">We supply highly quality organic products</p>
+                            <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
 
-                  <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6" style=" background-image: url('./images/banner2.png');">
-                    <!-- text part -->
-                    <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
-                    <p class="text-xl">We supply highly quality organic products</p>
-                    <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
+                        </div>
+                        <!-- swap button function  starts-->
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
 
-                  </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <!--slide 3 -->
-                <div id="slide3" class="carousel-item relative w-full justify-center items-center  ">
-                    <!-- adding background -->
+                        <!-- swap button ends -->
 
-                  <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6" style=" background-image: url('./images/banner3.png');">
-                    <!-- text part -->
-                    <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
-                    <p class="text-xl">We supply highly quality organic products</p>
-                    <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
+                    </div>
+                    <!-- slide 2 -->
+                    <div id="slide2" class="carousel-item relative w-full justify-center items-center  ">
+                        <!-- adding background -->
 
-                  </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <!-- slide 4 -->
-                <div id="slide4" class="carousel-item relative w-full justify-center items-center  ">
-                    <!-- adding background -->
+                        <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6"
+                            style=" background-image: url('./images/banner2.png');">
+                            <!-- text part -->
+                            <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
+                            <p class="text-xl">We supply highly quality organic products</p>
+                            <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
 
-                  <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6" style=" background-image: url('./images/banner4.png');">
-                    <!-- text part -->
-                    <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
-                    <p class="text-xl">We supply highly quality organic products</p>
-                    <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!--slide 3 -->
+                    <div id="slide3" class="carousel-item relative w-full justify-center items-center  ">
+                        <!-- adding background -->
 
-                  </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
+                        <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6"
+                            style=" background-image: url('./images/banner3.png');">
+                            <!-- text part -->
+                            <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
+                            <p class="text-xl">We supply highly quality organic products</p>
+                            <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
+
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div id="slide4" class="carousel-item relative w-full justify-center items-center  ">
+                        <!-- adding background -->
+
+                        <div class="flex  flex-col bg-cover h-[600px] w-full items-center justify-center rounded-md text-[white] gap-6"
+                            style=" background-image: url('./images/banner4.png');">
+                            <!-- text part -->
+                            <h2 class="text-7xl fonts-lato text-center">Exotic tastes at your <br> doorstep</h2>
+                            <p class="text-xl">We supply highly quality organic products</p>
+                            <button class="btn glass text-[white] bg-[#F85559] px-6 rounded-lg">Shop Now</button>
+
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+
+                    <!-- adding new part -->
                 </div>
-              </div>
-
+                <!-- extra fruits section -->
+                <div
+                    class="hidden  lg:flex gap-36 bg-[#FFF] mt-[-122px] absolute  ml-24 h-60 justify-between items-center px-10 rounded-md">
+                    <div class="felx flex-col items-center justify-center flex-1">
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="text-lg fonts-lato text-center ">Redberry</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="text-lg fonts-lato text-center ">Orange</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="text-lg fonts-lato text-center ">Mango</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="text-lg fonts-lato text-center ">Strawberry</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="text-lg fonts-lato text-center">Strawberry</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- banner section ends -->
+        <!-- Banner section done -->
+
     </main>
     <footer></footer>
 </body>

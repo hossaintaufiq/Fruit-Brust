@@ -242,19 +242,51 @@
 
         <!-- Card section starts -->
         <section>
-            <div class="grid grid-cols-1 lg:grid-cols-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 ">
                 <!-- card 1 starts -->
                 <div>
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl class=h-[447px]">
                         <figure class="px-10 pt-10">
                             <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <hr style="background: rgba(18, 18, 18, 0.10);
+                            ">
+                            <p>Apples</p>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
+                            <!-- new button edit  -->
+                            <div class="card-actions">
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn" onclick="my_modal_5.showModal()">Details</button>
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                    <form method="dialog" class="modal-box flex items-center justify-center flex-col">
+                                        <img src="./images/fruit6.png" alt="">
+                                        <h3 class="font-bold text-lg">Apples</h3>
+                                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div class="modal-action">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close</button>
+                                            <button class="btn">Buy Now</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
+
+                            <!-- new button done -->
                         </div>
                     </div>
                 </div>
@@ -275,8 +307,12 @@
         </section>
         <!--card section ends  -->
     </main>
+
+
+    <!-- footer section starts -->
     <footer>
-        <div class="h-[556px] bg-[#121212] text-[white] flex flex-col justify-center items-center gap-12 flex-wrap mt-10">
+        <div
+            class="h-[556px] bg-[#121212] text-[white] flex flex-col justify-center items-center gap-12 flex-wrap mt-10">
             <div>
                 <div class="flex">
                     <img src="./images/logo.png" alt="" />

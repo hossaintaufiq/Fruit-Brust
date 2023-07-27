@@ -1,18 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- deisyui links and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Title of the page -->
+    <title>Fruit-Burst</title>
+    <!-- Extra styles -->
+    <style>
+        .fonts-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body >
+
+<body>
     <header class="container mx-auto">
         <!-- navbar starts -->
-        <nav>
+        <nav class="">
+            <div class="navbar bg-base-100 lg:bg-[#F85559] my-10 rounded-full px-11 py-7 lg:text-[white] text-[black] flex flex-row-reverse lg:flex-row">
+                          <!-- needed part starts -->
+            <div class="flex-start">
+                <!-- regular menu bar -->
+                <div class="flex-1 hidden lg:block">
+                    <ul class="flex justify-center items-center gap-7 fonts-lato text-lg">
+                        <li> <a href="">Home</a></li>
+                        <li> <a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <!-- button -->
+                <div class="dropdown  block lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <!-- customized width -->
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-10 lg:w-52">
+                        <li> <a href="">Home</a></li>
+                        <li> <a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- needed part ends -->
+                <div class="flex-1 lg:pl-52 ">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl fonts-lato">Fruit Burst</a>
+                </div>
+                <!-- search bar -->
+                <div class="flex-none gap-2 hidden lg:block">
+                    <div class="form-control w-96">
+                        <input type="text" placeholder="Search" class="input input-bordered w-96 md:w-auto text-base " />
+                    </div>
 
+                </div>
+            </div>
         </nav>
         <!-- navbar ends -->
-
     </header>
     <main class="container mx-auto">
         <!-- Banner section starts -->
@@ -20,10 +77,8 @@
 
         </section>
         <!-- banner section ends -->
-
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
+
 </html>
